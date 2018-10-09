@@ -3,14 +3,14 @@
 
 <html>
    <head>
-    <title>View Files 3</title>
+    <title>View Files 4</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale-1.0">
     <script src="modernizr.custom.65897.js"></script>
     </head>
     
     <body>
-    <h2>View Files 3</h2>
+    <h2>View Files 4</h2>
     <?php
     $dir = "../Exercise02_01_01";
     // scans the directory and creates it as a table.
@@ -29,7 +29,7 @@
             $fullEntryName = $dir . "/" . $entry;
             echo "<tr><td>";
             if (is_file($fullEntryName)) {
-                echo "<a href=\"$fullEntryName\">$fullEntryName</a><br>\n";    
+                echo "<a href=\"FileDownloader.php?fileName=$entry\">" . htmlentities($entry) . "</a><br>\n";    
             }
             else {
                 echo htmlentities($entry);
