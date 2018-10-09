@@ -29,6 +29,7 @@
             $fullEntryName = $dir . "/" . $entry;
             echo "<tr><td>";
             if (is_file($fullEntryName)) {
+                //the question mark tells the superglobal that the content afterwards is what they want to take out of the URL
                 echo "<a href=\"FileDownloader.php?fileName=$entry\">" . htmlentities($entry) . "</a><br>\n";    
             }
             else {
@@ -39,6 +40,7 @@
                $perms = fileperms($fullEntryName);
                $perms = decoct($perms % 01000);
                echo "</td><td align='center'>0$perms";
+                // this indicates what the filesize the is permitted is.
                echo "</td><td align='right'>" . number_format(filesize($fullEntryName), 0) . " bytes";
             }
             else {
