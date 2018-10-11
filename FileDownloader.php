@@ -7,7 +7,7 @@
             $fileToGet = $dir . "/" . stripslashes($_GET['fileName']);
             // if the file that is input by the user is readable then there will be not error message and the page will be true
             if (is_readable($fileToGet)) {
-                // these headers gives us permission to download files
+                // these headers gives us permission to download files and gives us security
                 header("Content-Description: File Transfer");
                 header("Content-Type: application/force-download");
                 header("Content-Disposition: attachment; filename=\"" . $_GET["fileName"] . "\"");
@@ -28,6 +28,7 @@
         }
         if ($showErrorPage) {
             ?>
+            
 <!doctype html>
 
 
