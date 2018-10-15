@@ -3,14 +3,14 @@
 
 <html>
    <head>
-    <title>Visitor Feedback 2</title>
+    <title>Visitor Feedback</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale-1.0">
     <script src="modernizr.custom.65897.js"></script>
     </head>
     
     <body>
-    <h2>Visitor Feedback 2</h2>
+    <h2>Visitor Feedback</h2>
     <?php
         //global variable
         //directory targeted 
@@ -23,8 +23,8 @@
                  if ($fileName !== "." && $fileName !== "..") {
                      echo "From <strong>$fileName</strong><br>";
                      echo "<pre>\n";
-                     // reads the files and sends the data to the specified page
-                     readfile($dir . "/" . $fileName);
+                     $comments = file_get_contents($dir . "/" . $fileName);
+                     echo $comments;
                      echo "</pre>\n";
                      echo "<hr>\n";
                  } 
@@ -37,5 +37,6 @@
     
     </body>
 </html>
+
 
 
