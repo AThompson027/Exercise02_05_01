@@ -89,7 +89,7 @@
         }
      
         ?>
-    <form action="VisitorComments2.php" method="post">
+    <form action="VisitorComments3.php" method="post">
         Your name: <input type="text" name="name"><br>
         Your email: <input type="email" name="email"><br>
         <textarea name="comment" rows="6" cols="100"></textarea><br>

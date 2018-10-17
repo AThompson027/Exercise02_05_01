@@ -32,13 +32,16 @@
                 echo "<a href=\"$fullEntryName\">$fullEntryName</a><br>\n";    
             }
             else {
+                // changes characters into html entities
                 echo htmlentities($entry);
             }
             echo "</td><td align='center'>" . fileowner($fullEntryName);
+            // if this is a file then the permissiosn will be set for the file
             if (is_file($fullEntryName)) {
                $perms = fileperms($fullEntryName);
                $perms = decoct($perms % 01000);
                echo "</td><td align='center'>0$perms";
+                // puts in the byte size for the file
                echo "</td><td align='right'>" . number_format(filesize($fullEntryName), 0) . " bytes";
             }
             else {

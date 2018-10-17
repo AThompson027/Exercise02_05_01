@@ -43,20 +43,11 @@
                          echo "hr>\n";
                          fclose($fileHandle);
                      }
-    
-//                     
-//                     $commentLines = count($comments);
-//                     // the 3 means that it will display the 3rd element in the array which is the comment the user inputed
-//                     for ($i = 3; $i < $commentLines; $i++) {
-//                         echo htmlentities($comments[$i]) . "<br>\n";
-//                     }
+
              }
                  }
          }
-             // else will display an error message
-//          else {
-//             echo "Folder \"$dir\" does not exist.<br>\n";
-//         }
+
         ?>
     
     </body>
