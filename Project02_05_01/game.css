@@ -7,7 +7,7 @@ background-color: #FFE8E5;
 width: 50%;
 text-align: center;
 margin-left: 25%;
-height: 45%;
+height: 30%;
 padding-top: 1%;
 border: 2px solid #FF9999;
 border-radius: 5%;
@@ -21,4 +21,28 @@ h2 {
     font-family: 'Mali', cursive;
     font-size: 3em;
     text-shadow: 2px 2px #FFE8E5;
+}
+
+h3 {
+color: white;
+text-align: center;
+border:2px solid #FF9999;
+background-color: red;
+width: 50%;
+height: 5%;
+padding-top: 1%;
+margin-left: 25%; 
+font-weight: 200;
+}
+
+h4 {
+color: white;
+text-align: center;
+border:2px solid #FF9999;
+background-color: green;
+width: 50%;
+height: 5%;
+padding-top: 1%;
+margin-left: 25%; 
+font-weight: 200;
 }
