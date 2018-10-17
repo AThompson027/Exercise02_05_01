@@ -11,7 +11,7 @@
             }
         // while the end of "fileName" is not reached then it will get the lines of data from the inputs and put them into the txt file. fgets when called will go down the line until it reaches the end of the file.
         else{
-            while(!feof($fileName)){
+            while(!feof($fileHandle)){
                 $name = fgets($fileHandle);
                 // the HTML entities function changes the characters into HTML entities so it will not confuse the code
                 // EXAMPLE: > = greater than OR a tag.

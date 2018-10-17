@@ -1,9 +1,11 @@
 <html>
 <head>
     <script src="modernizr.custom.65897.js"></script>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan|Mali" rel="stylesheet">
 </head>
 <body>
-    <h2>The Game</h2>
+    <h2>THE GAME</h2>
     <?php
     //global variable
     $errormsg = "";
@@ -65,13 +67,13 @@
        
 <!--       This is the form!!-->
         <form action="TheGame.php" method="post">
-            <label for="username">Username</label><input type="text" id="username" name="username"><br>
-            <label for="password">Password</label><input type="password" id="password" name="password"><br>
-            <label for="name">Full Name</label><input type="text" id="name" name="name"><br>
-            <label for="email">Email</label><input type="text" id="email" name="email"><br>
-            <label for="age">Age</label><input type="number" id="age" name="age"><br>
-            <label for="screenname">Screenname</label><input type="text" id="screenname" name="screenname"><br>
-            <label for="comments">Comments</label><textarea id="comments" name="comments"></textarea><br>
+            <label for="username">Username:<br></label><input type="text" id="username" name="username"><br>
+            <label for="password">Password:<br></label><input type="password" id="password" name="password"><br>
+            <label for="name">Full Name:<br></label><input type="text" id="name" name="name"><br>
+            <label for="email">Email:<br></label><input type="text" id="email" name="email"><br>
+            <label for="age">Age:<br></label><input type="number" id="age" name="age"><br>
+            <label for="screenname">Screenname:<br></label><input type="text" id="screenname" name="screenname"><br>
+            <label for="comments">Comments:<br></label><textarea id="comments" name="comments"></textarea><br>
             <input name="submit" value="submit" type="submit">
         </form>
 </body>
