@@ -7,19 +7,25 @@ background-color: #FFE8E5;
 width: 50%;
 text-align: center;
 margin-left: 25%;
-height: 30%;
+height: 60%;
 padding-top: 1%;
 border: 2px solid #FF9999;
 border-radius: 5%;
 font-family: 'Kodchasan', sans-serif;
 }
 
-h2 {
+h1 {
     text-align: center;
-    height: 5%;
-    padding-top: 10%;
+    height: 13%;
     font-family: 'Mali', cursive;
     font-size: 3em;
+    text-shadow: 2px 2px #FFE8E5;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Mali', cursive;
+    font-size: 2em;
     text-shadow: 2px 2px #FFE8E5;
 }
 
@@ -46,3 +52,4 @@ padding-top: 1%;
 margin-left: 25%; 
 font-weight: 200;
 }
+

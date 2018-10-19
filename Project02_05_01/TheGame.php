@@ -7,7 +7,6 @@
     
 </head>
 <body>
-    <h2>The Game</h2>
     <?php
     //global variable
     $errormsg = "";
@@ -69,10 +68,12 @@
     if(!empty($_POST['submit'])){
         echo $errormsg;
     }
+    
     ?>
        
 <!--       This is the form!!-->
         <form action="TheGame.php" method="post">
+               <h1>The Game</h1>
             <label for="username">Username</label><input type="text" id="username" name="username"><br>
             <label for="password">Password</label><input type="password" id="password" name="password"><br>
             <label for="name">Full Name</label><input type="text" id="name" name="name"><br>
@@ -82,5 +83,10 @@
             <label for="comments">Comments</label><textarea id="comments" name="comments"></textarea><br>
             <input name="submit" value="submit" type="submit">
         </form>
+        <?php
+        if (isset($_POST["submit"]) && !empty($_POST['password']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['age']) && !empty($_POST['screenname']) && !empty($_POST['comments'])) {
+            echo "<h2>Hello, " . $_POST["username"] . ".</h2>";
+        }
+        ?>
 </body>
 </html>
