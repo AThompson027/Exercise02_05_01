@@ -27,6 +27,8 @@ h2 {
     font-family: 'Mali', cursive;
     font-size: 2em;
     text-shadow: 2px 2px #FFE8E5;
+    border: 2px solid #FF9999;
+    background: white;
 }
 
 h3 {

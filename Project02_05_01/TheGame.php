@@ -19,15 +19,15 @@
         }
         // else will take off malicious slashes in data and also and open the file
         else {
-            $string = stripslashes($_POST['name']) . "\n";
+            $string = stripslashes($_POST['name']) . ";";
             // this makes the password into hash for security reasons! (I'm extra!!)
             $password = md5($_POST['password']);
-            $string .= $password . "\n";
-            $string .= stripslashes($_POST['username']) . "\n";
-            $string .= stripslashes($_POST['email']) . "\n";
-            $string .= stripslashes($_POST['age']) . "\n";
-            $string .= stripslashes($_POST['screenname']) . "\n";
-            $string .= stripslashes($_POST['comments']) . "\n";
+            $string .= $password . ";";
+            $string .= stripslashes($_POST['username']) . ";";
+            $string .= stripslashes($_POST['email']) . ";";
+            $string .= stripslashes($_POST['age']) . ";";
+            $string .= stripslashes($_POST['screenname']) . ";";
+            $string .= stripslashes($_POST['comments']) . ";";
             //This is the file name that the data will be entered to
             $filename = "$dir/TheGamers.txt";
             // write and binary only
@@ -83,10 +83,19 @@
             <label for="comments">Comments</label><textarea id="comments" name="comments"></textarea><br>
             <input name="submit" value="submit" type="submit">
         </form>
+    <h1>Leaderboard</h1>
         <?php
+//         $arrayvar = explode("\n", $string);
+//         foreach ($arrayvar as $user) {
+//             $dataarray = explode(";", $user);
+//             echo $dataarray[2];
+//         }
+    
         if (isset($_POST["submit"]) && !empty($_POST['password']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['age']) && !empty($_POST['screenname']) && !empty($_POST['comments'])) {
-            echo "<h2>Hello, " . $_POST["username"] . ".</h2>";
+            echo "<h2>" . $_POST["username"] . "</h2>";
         }
+        
+        
         ?>
 </body>
 </html>
